@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- preload para el css -->
+    <link rel="preload" href="../../assets/css/app.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+    <title>Alumnos</title>
+</head>
+<body>
+    <header>
+    <h1>Buscador de alumnos</h1>
+    </header>
+    <main>
+        <!-- boton y label para buscar alumno y mostrarlo en pantalla con js-->
+        <p>Puedes buscar el alumno por No. control o por Nombre</p>
+        <div class="contenedor">
+            <div class="buscar">
+                <label>Buscar:</label>
+                <input id="buscar-alumno" type="text" id="buscar" placeholder="No. Control / Nombre">
+                <button id="btn-buscar">Buscar</button>
+            </div>
+        </div>
+        <!-- tabla para listar el alumno buscado -->
+        <div class="contenedor-tabla">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>No. Control</th>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Edad</th>
+                        <th>Semestre actual</th>
+                        <th>Carrera</th>
+                        <th>Especialidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-alumnos">
+                    <tr>
+                        <td id="no_control"></td>
+                        <td id="nombre_alumno"></td>
+                        <td id="apellido_paterno"></td>
+                        <td id="apellido_materno"></td>
+                        <td id="fecha_nacimiento"></td>
+                        <td id="edad_alumno"></td>
+                        <td id="semestre_actual"></td>
+                        <td id="carrera"></td>
+                        <td id="especialidad"></td>
+                        <td>
+                            <button id="btn-editar">Editar</button>
+                            <button id="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </main>
+
+    <script src="../../assets/js/app.js"></script>
+</body>
+
+<footer class="footer">
+    <p>Desarrollado por: Anthony Solano López</p>
+</footer>
+</html>
